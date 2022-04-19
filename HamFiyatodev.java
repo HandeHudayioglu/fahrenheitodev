@@ -8,13 +8,14 @@ public class HamFiyatodev {
 		
 		double x,y,z ; 
 		
-		
+
+	
 		
 		Scanner satisFiyatı = new Scanner (System.in);
 	    System.out.print("Lütfen satış fiyatını giriniz:");
 	    x = satisFiyatı.nextInt();
-	    y=(x*100)/(100+18);
-	    z=(y*100)/(100+15);
+	    y=(x*100)/(100+18); // KDV siz fiyat
+	    z=(y*100)/(100+15); //Ham fiyat
 	    System.out.println("KDV'siz Fiyat: "+y);
 	    System.out.println("Ham Fiyat: " +z);
 
